@@ -19,4 +19,4 @@ jobs:
     uses: ./.github/workflows/build_and_push_image.yml
     secrets:
       GHCR_USERNAME: ${{ secrets.GHCR_USERNAME }}
-      GHCR_TOKEN: ${{ secrets.GHCR_TOKEN }
+      GHCR_TOKEN: ${{ secrets.GHCR_TOKEN }}
