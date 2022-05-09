@@ -20,12 +20,9 @@ jobs:
     secrets:
       GHCR_USERNAME: ${{ secrets.GHCR_USERNAME }}
       GHCR_TOKEN: ${{ secrets.GHCR_TOKEN }}
-<<<<<<< HEAD
 
   tag_on_merge:
     uses: ./.github/workflows/tag_on_merge.yml
     secrets:
       GHCR_USERNAME: ${{ secrets.GHCR_USERNAME }}
-      GHCR_TOKEN: ${{ secrets.GHCR_TOKEN }}      
-=======
->>>>>>> 5ff5a09fd03376e6bcd4497de729c4d18edf2bdd
+      GHCR_TOKEN: ${{ secrets.GHCR_TOKEN }}
