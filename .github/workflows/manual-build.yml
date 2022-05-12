@@ -7,5 +7,5 @@ jobs:
     uses: kbase/.github/.github/workflows/reusable_build-push.yml@main
     with:
       name: '${{ github.event.repository.name }}-develop'
-      tags: branch-${{ github.ref_name }}
+      tags: br-${{ github.ref_name }}
     secrets: inherit
