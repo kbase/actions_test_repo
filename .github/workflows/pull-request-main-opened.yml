@@ -1,5 +1,5 @@
 ---
-name: PR to master opened
+name: PR to main pre-merge build
 on:
   pull_request:
     branches:
@@ -7,6 +7,8 @@ on:
       - master
     types:
       - opened
+      - reopened
+      - synchronize
 jobs:
 #  test:
 #    uses: ./.github/workflows/reusable_test-python.yml
