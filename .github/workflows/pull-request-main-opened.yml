@@ -1,0 +1,21 @@
+---
+name: PR to main pre-merge build
+on:
+  pull_request:
+    branches:
+      - main
+      - master
+    types:
+      - opened
+      - reopened
+      - synchronize
+jobs:
+#  test:
+#    uses: ./.github/workflows/reusable_test-python.yml
+  build-push:
+#    needs: test
+    uses: ./.github/workflows/reusable_build-push.yml
+    with:
+      name: '${{ github.event.repository.name }}'
+      tags: pr-${{ github.event.number }}
+    secrets: inherit
