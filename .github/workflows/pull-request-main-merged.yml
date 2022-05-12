@@ -17,5 +17,5 @@ jobs:
     uses: ./.github/workflows/reusable_build-push.yml
     with:
       name: '${{ github.event.repository.name }}'
-      tags: latest-rc
+      tags: pr-${{ github.event.number }},latest-rc
     secrets: inherit
