@@ -3,6 +3,7 @@ name: PR to master opened
 on:
   pull_request:
     branches:
+      - main
       - master
     types:
       - opened
