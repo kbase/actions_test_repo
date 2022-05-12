@@ -1,5 +1,5 @@
 ---
-name: PR To master merged
+name: PR to main post-merge
 on:
   pull_request:
     branches:
