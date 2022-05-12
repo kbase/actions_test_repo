@@ -3,6 +3,7 @@ name: PR To master merged
 on:
   pull_request:
     branches:
+      - main
       - master
     types:
       - closed
